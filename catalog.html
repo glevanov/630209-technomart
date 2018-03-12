@@ -10,8 +10,10 @@
                 <div>
                     <a class="logo" href="index.html">ТЕХНОМАРТ</a>
 
-                    <p>Поиск:</p>
-                    <!-- Здесь будет форма -->
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                        <label class="visually-hidden header-search-label" for="header-search">Поиск</label>
+                        <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск:">
+                    </form>
                     <a href="#">Закладки: 0</a>
                     <a href="#">Корзина: 10</a>
                     <a href="#">Оформить заказ</a>
@@ -27,14 +29,22 @@
 
                     <ul class="user-info">
                         <li>
-                            <a href="#">
+                            <a class="profile-link" href="#">
                                 <img src="img/icon-user.svg" width="20" height="18" alt="Профиль">
                                 Равшан Джамшутович
                             </a>
                         </li>
-                        <li><a href="#"><img src="img/icon-logout.svg" width="20" height="17" alt="Выход из учетной записи"></a></li>
-                        <li><a href="#">Мои заказы</a></li>
-                        <li><a href="#">Личный кабинет</a></li>
+                        <li>
+                            <a class="logout-link" href="#">
+                                <img src="img/icon-logout.svg" width="20" height="17" alt="Выход из учетной записи">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="basket-link" href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="#">Личный кабинет</a>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -66,12 +76,39 @@
 
             <section class="filters">
                 <h3 class="visually-hidden">Фильтр товаров</h3>
-                <!-- Здесь будет форма -->
+                <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                        <ul>
+                            <li>
+                                <!--<label for="filters-brands"></label>
+                                <input type="radio" name="filters-brands" id="filters-brands">-->
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+
+                            </li>
+                        </ul>
+
+
+
+                    </fieldset>
+                </form>
             </section>
 
             <section class="sort">
                 <h3 class="visually-hidden">Сортировка</h3>
-                <!-- Здесь будет форма -->
+                <form class="filters-sort">
+
+                </form>
             </section>
 
             <section class="catalog">
