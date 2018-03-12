@@ -9,9 +9,10 @@
             <section class="top-menu">
                 <div>
                     <a class="logo">ТЕХНОМАРТ</a>
-
-                    <p>Поиск:</p>
-                    <!-- Здесь будет форма -->
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                        <label class="visually-hidden header-search-label" for="header-search">Поиск</label>
+                        <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск:">
+                    </form>
                     <a href="#">Закладки: 0</a>
                     <a href="#">Корзина: 0</a>
                     <a href="#">Оформить заказ</a>
@@ -26,8 +27,12 @@
                     </div>
 
                     <ul class="user-info">
-                        <li><a href="#">Войти</a></li>
-                        <li><a href="#">Регистрация</a></li>
+                        <li>
+                            <a class="login-link" href="#">Войти</a>
+                        </li>
+                        <li>
+                            <a class="registration-link" href="#">Регистрация</a>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -94,9 +99,9 @@
                             <span>Соседям на радость!</span>
                         </li>
                     </ul>
-                    <span><!-- Кнопка влево --></span>
-                    <span><!-- Кнопка вправо --></span>
-                    <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                    <button class="slider-button-left" type="button"><span class="visually-hidden">Кнопка влево</span></button>
+                    <button class="slider-button-right" type="button"><span class="visually-hidden">Кнопка вправо</span></button>
+                    <a class="button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                 </div>
             </section>
 
@@ -212,29 +217,36 @@
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+                <a class="button" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
             </section>
 
             <section class="contacts">
                 <h2>КОНТАКТЫ</h2>
                 <p>Вы можете забрать товар сами,<br>
                 заехав в наш офис:</p>
-                <a href="https://www.google.ru/maps"><img src="img/contacts-map.png" width="300" height="158" alt="Карта"></a>
-                <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+                <a href="https://www.google.ru/maps"><img src="img/contacts-map.png" width="300" height="158" alt="Адрес офиса: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+                <a class="button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
             </section>
 
             <div class="modal modal-write-us">
-                <p>Ваше имя:</p>
-                <!-- Здесь будет форма -->
-                <p>Ваш e-mail:</p>
-                <!-- Здесь будет форма -->
-                <p>Текст письма:</p>
-                <!-- Здесь будет форма -->
-                <button type="submit">ОТПРАВИТЬ</button>
+                <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+                    <input class="write-us-text" type="text" name="write-us-name" id="write-us-name" placeholder="Представьтесь, пожалуйста">
+
+                    <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+                    <input class="write-us-text" type="email" name="write-us-email" id="write-us-email" placeholder="Для отправки ответа">
+
+                    <label class="write-us-label" for="write-us-text">Текст письма:</label>
+                    <textarea class="write-us-textarea" name="write-us-text" id="write-us-text" placeholder="В свободной форме"></textarea>
+
+                    <button class="button" type="submit">ОТПРАВИТЬ</button>
+                    <button class="button close-button" type="button"><span class="visually-hidden">Закрыть окно<span></button>
+                </form>
             </div>
 
             <div class="modal modal-map">
                 <img src="img/modal-map-placeholder.jpg" width="940" height="446" alt="Большая карта">
+                <button class="button close-button" type="button"><span class="visually-hidden">Закрыть окно<span></button>
             </div>
         </main>
 
