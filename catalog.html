@@ -81,8 +81,9 @@
                         <span class="filters-heading">ФИЛЬТР:</span>
                     <div>
 
-                    <div class="form-price">
-                        <span class="filters-heading">ЦЕНА:</span>
+
+                    <fieldset>
+                        <legend class="filters-heading">ЦЕНА:</legend>
 
                         <div class="price-slider">
                             <div class="price-slider-dot"></div>
@@ -91,9 +92,14 @@
                         </div>
 
                         <div>
-                            <span class="price-range">0</span><span>—</span><span class="price-range">30000</span>
+                            <label class="visually-hidden" for="price-min">Минимальная цена</label>
+                            <input type="text" name="price-min" id="price-min" placeholder="0">
+                            <span>—</span>
+                            <label class="visually-hidden" for="price-max">Максимальная цена</label>
+                            <input type="text" name="price-max" id="price-max" placeholder="30000">
                         </div>
-                    </div>
+
+                    </fieldset>
 
                     <fieldset>
                         <legend class="filters-heading">ПРОИЗВОДИТЕЛИ:</legend>
