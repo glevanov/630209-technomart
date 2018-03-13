@@ -77,38 +77,81 @@
             <section class="filters">
                 <h3 class="visually-hidden">Фильтр товаров</h3>
                 <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+
+                    <div class="form-price">
+                        <span class="filters-sort-heading">ЦЕНА:</span>
+
+                        <div class="price-slider">
+                            <div class="price-slider-dot"></div>
+                            <div class="price-slider-dot"></div>
+                            <div class="price"></div>
+                        </div>
+
+                        <div>
+                            <span class="price-range">0</span><span>—</span><span class="price-range">30000</span>
+                        </div>
+                    </div>
+
                     <fieldset>
-                        <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                        <legend class="filters-heading">ПРОИЗВОДИТЕЛИ:</legend>
                         <ul>
-                            <li>
-                                <!--<label for="filters-brands"></label>
-                                <input type="radio" name="filters-brands" id="filters-brands">-->
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                                <label for="filter-bosch">BOSCH</label>
                             </li>
-                            <li>
-
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                                <label for="filter-interskol">ИНТЕРСКОЛ</label>
                             </li>
-                            <li>
-
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                                <label for="filter-makita">MAKIta</label>
                             </li>
-                            <li>
-
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                                <label for="filter-dewalt">Dewalt</label>
                             </li>
-                            <li>
-
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                                <label for="filter-hitachi">Hitachi</label>
                             </li>
                         </ul>
-
-
-
                     </fieldset>
+
+                    <fieldset>
+                        <legend class="filters-heading">ПИТАНИЕ:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="accumulator" id="filter-accumulator" checked>
+                                <label for="filter-accumulator">Аккумуляторные</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="cable" id="filter-cable">
+                                <label for="filter-cable">Сетевые</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <button class="button" type="submit">ПОКАЗАТЬ</button>
                 </form>
             </section>
 
             <section class="sort">
                 <h3 class="visually-hidden">Сортировка</h3>
-                <form class="filters-sort">
+                    <div class="filters-sort-container">
+                        <div class="filters-block">
+                            <span class="filters-sort-heading">ФИЛЬТР:</span>
+                        <div>
 
-                </form>
+                        <div class="filters-block">
+                            <span class="filters-sort-heading">СОРТИРОВКА:</span>
+                            <button class="sort-button" type="button">ПО ЦЕНЕ</button>
+                            <button class="sort-button" type="button">ПО ТИПУ</button>
+                            <button class="sort-button" type="button">ПО ФУНКЦИОНАЛУ</button>
+                            <button class="sort-button-ascending" type="button"><span class="visually-hidden">Сортировать по возрастанию</span></button>
+                            <button class="sort-button-descending" type="button"><span class="visually-hidden">Сортировать по убыванию</span></button>
+                        </div>
+                    </div>
             </section>
 
             <section class="catalog">
@@ -203,7 +246,8 @@
             <div class="modal modal-cart">
                 <span>Товар добавлен в корзину!</span>
                 <a class="button" href="#">ОФОРМИТЬ ЗАКАЗ</a>
-                <a class="button">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+                <a class="button" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+                <button class="button close-button" type="button"><span class="visually-hidden">Закрыть окно<span></button>
             </div>
         </main>
 
