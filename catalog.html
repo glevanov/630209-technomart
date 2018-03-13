@@ -77,9 +77,12 @@
             <section class="filters">
                 <h3 class="visually-hidden">Фильтр товаров</h3>
                 <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+                    <div>
+                        <span class="filters-heading">ФИЛЬТР:</span>
+                    <div>
 
                     <div class="form-price">
-                        <span class="filters-sort-heading">ЦЕНА:</span>
+                        <span class="filters-heading">ЦЕНА:</span>
 
                         <div class="price-slider">
                             <div class="price-slider-dot"></div>
@@ -138,18 +141,14 @@
 
             <section class="sort">
                 <h3 class="visually-hidden">Сортировка</h3>
-                    <div class="filters-sort-container">
-                        <div class="filters-block">
-                            <span class="filters-sort-heading">ФИЛЬТР:</span>
-                        <div>
-
-                        <div class="filters-block">
-                            <span class="filters-sort-heading">СОРТИРОВКА:</span>
-                            <button class="sort-button" type="button">ПО ЦЕНЕ</button>
-                            <button class="sort-button" type="button">ПО ТИПУ</button>
-                            <button class="sort-button" type="button">ПО ФУНКЦИОНАЛУ</button>
-                            <button class="sort-button-ascending" type="button"><span class="visually-hidden">Сортировать по возрастанию</span></button>
-                            <button class="sort-button-descending" type="button"><span class="visually-hidden">Сортировать по убыванию</span></button>
+                    <div class="sort-container">
+                        <div class="sort-block">
+                            <span class="sort-heading">СОРТИРОВКА:</span>
+                            <a class="sort-type" href="#">ПО ЦЕНЕ</a>
+                            <a class="sort-type" href="#">ПО ТИПУ</a>
+                            <a class="sort-type" href="#">ПО ФУНКЦИОНАЛУ</a>
+                            <a class="sort-ascending" href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+                            <a class="sort-descending" href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
                         </div>
                     </div>
             </section>
