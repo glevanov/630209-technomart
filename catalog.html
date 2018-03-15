@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
     </head>
-    <body>
+    <body class="inner">
         <header class="main-header">
             <section class="top-menu">
                 <div>
@@ -74,14 +74,9 @@
 
             <h2>ПЕРФОРАТОРЫ</h2>
 
-            <section class="filters">
-                <h3 class="visually-hidden">Фильтр товаров</h3>
+            <aside class="filters">
+                <h3>ФИЛЬТР:</h3>
                 <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
-                    <div>
-                        <span class="filters-heading">ФИЛЬТР:</span>
-                    </div>
-
-
                     <fieldset>
                         <legend class="filters-heading">ЦЕНА:</legend>
 
@@ -93,35 +88,34 @@
 
                         <div>
                             <label class="visually-hidden" for="price-min">Минимальная цена</label>
-                            <input type="text" name="price-min" id="price-min" placeholder="0">
+                            <input type="number" name="price-min" id="price-min" value="0">
                             <span>—</span>
                             <label class="visually-hidden" for="price-max">Максимальная цена</label>
-                            <input type="text" name="price-max" id="price-max" placeholder="30000">
+                            <input type="number" name="price-max" id="price-max" value="30000">
                         </div>
-
                     </fieldset>
 
                     <fieldset>
-                        <legend class="filters-heading">ПРОИЗВОДИТЕЛИ:</legend>
+                        <legend class="filters-heading">Производители:</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="bosch" id="filter-bosch" checked>
                                 <label for="filter-bosch">BOSCH</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="interskol" id="filter-interskol">
                                 <label for="filter-interskol">ИНТЕРСКОЛ</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="makita" id="filter-makita" checked>
                                 <label for="filter-makita">MAKIta</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="dewalt" id="filter-dewalt">
                                 <label for="filter-dewalt">Dewalt</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="hitachi" id="filter-hitachi">
                                 <label for="filter-hitachi">Hitachi</label>
                             </li>
                         </ul>
@@ -143,20 +137,19 @@
 
                     <button class="button" type="submit">ПОКАЗАТЬ</button>
                 </form>
-            </section>
+            </aside>
 
             <section class="sort">
-                <h3 class="visually-hidden">Сортировка</h3>
-                    <div class="sort-container">
-                        <div class="sort-block">
-                            <span class="sort-heading">СОРТИРОВКА:</span>
-                            <a class="sort-type" href="#">ПО ЦЕНЕ</a>
-                            <a class="sort-type" href="#">ПО ТИПУ</a>
-                            <a class="sort-type" href="#">ПО ФУНКЦИОНАЛУ</a>
-                            <a class="sort-ascending" href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
-                            <a class="sort-descending" href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
-                        </div>
+                <div class="sort-container">
+                    <div class="sort-block">
+                        <h3 class="sort-heading">СОРТИРОВКА:</h3>
+                        <a class="sort-type" href="#">ПО ЦЕНЕ</a>
+                        <a class="sort-type" href="#">ПО ТИПУ</a>
+                        <a class="sort-type" href="#">ПО ФУНКЦИОНАЛУ</a>
+                        <a class="sort-ascending" href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+                        <a class="sort-descending" href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
                     </div>
+                </div>
             </section>
 
             <section class="catalog">
