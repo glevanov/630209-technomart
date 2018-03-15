@@ -45,6 +45,10 @@ textarea {
     background-color: #ee3643;
 }
 
+.logo:hover{
+    background-color: #ca2c37;
+}
+
 .header-search-input {
     color: #ffffff;
 }
@@ -59,7 +63,6 @@ textarea {
 .header-search-input:-ms-input-placeholder {
     color: #ffffff;
 }
-
 
 .header-lead {
     font-size: 16px;
@@ -101,13 +104,17 @@ textarea {
     background-color: #293449;
 }
 
-/** Хитрый ховер - в двух местах по разоному **/
-.top-menu-strip:hover {
+.top-menu-strip a:not(.logo):hover,
+.top-menu-strip input:hover {
     background-color: #212a3a;
 }
 
-.top-menu-strip:hover .logo {
-    background-color: #ca2c37;
+.top-menu-strip a:last-child {
+    background-color: #63a63e;
+}
+
+.top-menu-strip a:last-child:hover {
+    background-color: #5fbb2d;
 }
 
 .main-navigation {
