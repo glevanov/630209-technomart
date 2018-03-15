@@ -1,0 +1,151 @@
+/* Глобальные стили */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input,
+textarea {
+    font: inherit;
+
+    background-color: transparent;
+    border: none;
+}
+
+/* Стили хэдера*/
+.main-header {
+    text-transform: none;
+
+    background-color: #f4f7f9;
+}
+
+.logo {
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+.header-search-input {
+    color: #ffffff;
+}
+
+/* Кроссбраузерная замена цвета плейсхолдера */
+.header-search-input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.header-search-input::-moz-placeholder {
+    color: #ffffff;
+}
+.header-search-input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+
+.header-lead {
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.shop-phone {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+}
+
+.shop-address {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.user-info li {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.user-info li:hover {
+    color: #ee3643;
+}
+
+.main-navigation-list li {
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.main-navigation-list li:hover {
+    background-color: #293449;
+}
+
+.top-menu-strip {
+    color: #ffffff;
+    background-color: #293449;
+}
+
+/** Хитрый ховер - в двух местах по разоному **/
+.top-menu-strip:hover {
+    background-color: #212a3a;
+}
+
+.top-menu-strip:hover .logo {
+    background-color: #ca2c37;
+}
+
+.main-navigation {
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+/* Стили основной секции*/
+
+/* Стили футера*/
+.main-footer {
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: none;
+
+    background-color: #32425c;
+}
+
+.main-footer a:hover:not(.footer-logo) {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 16px;
+    line-height: 18px;
+
+    background-color: #293449;
+}
+
+.footer-logo {
+    font-size: 30px;
+    line-height: 30px;
+
+    background-color: #ee3643;
+}
+
+.footer-navigation-secondary,
+.footer-bottom a {
+    color: #ffd180;
+
+}
