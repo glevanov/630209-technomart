@@ -17,7 +17,7 @@ ul {
     list-style: none;
 }
 
-a {
+.link {
     color: inherit;
     text-decoration: none;
 }
@@ -31,10 +31,17 @@ textarea {
 }
 
 /* Стили хэдера*/
-.main-header {
+.header {
     text-transform: none;
 
     background-color: #f4f7f9;
+}
+
+.header__lead {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
 }
 
 .logo {
@@ -49,83 +56,89 @@ textarea {
     background-color: #ca2c37;
 }
 
-.header-search-input {
+.search__input {
     color: #ffffff;
 }
 
-/* Кроссбраузерная замена цвета плейсхолдера */
-.header-search-input::-webkit-input-placeholder {
-    color: #ffffff;
+.search__input:hover {
+    background-color: #212a3a;
 }
-.header-search-input::-moz-placeholder {
-    color: #ffffff;
-}
-.header-search-input:-ms-input-placeholder {
+
+.search__input::-webkit-input-placeholder {
     color: #ffffff;
 }
 
-.header-lead {
-    font-size: 16px;
-    line-height: 23px;
-    color: #ee3643;
+.search__input::-moz-placeholder {
+    color: #ffffff;
 }
 
-.shop-phone {
+.search__input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.contacts__phone {
     font-size: 21px;
     line-height: 21px;
     color: #ee3643;
 }
 
-.shop-address {
+.contacts__address {
     font-size: 14px;
     line-height: 24px;
 }
 
-.user-info li {
+.user__list-item {
     font-size: 21px;
     line-height: 21px;
+
+    background-color: #ffffff;
 }
 
-.user-info li:hover {
+.user__list-item:hover {
     color: #ee3643;
 }
+.navigation {
+    color: #ffffff;
 
-.main-navigation-list li {
+    background-color: #32425c;
+}
+
+.navigation__list {
+    /*display: flex;*/
+}
+
+.navigation__list-item {
     font-size: 17px;
     line-height: 17px;
 }
 
-.main-navigation-list li:hover {
+.navigation__header-item:hover {
     background-color: #293449;
 }
 
-.top-menu-strip {
+.menu {
     color: #ffffff;
     background-color: #293449;
+
+    /*display: flex;*/
 }
 
-.top-menu-strip a:not(.logo):hover,
-.top-menu-strip input:hover {
+.menu__regular-item:hover {
     background-color: #212a3a;
 }
 
-.top-menu-strip a:last-child {
+.menu__order {
     background-color: #63a63e;
 }
 
-.top-menu-strip a:last-child:hover {
+.menu__order:hover {
     background-color: #5fbb2d;
-}
-
-.main-navigation {
-    color: #ffffff;
-    background-color: #32425c;
 }
 
 /* Стили основной секции*/
 
 /* Стили футера*/
-.main-footer {
+.footer {
     line-height: 24px;
     color: #ffffff;
     text-transform: none;
@@ -133,26 +146,42 @@ textarea {
     background-color: #32425c;
 }
 
-.main-footer a:hover:not(.footer-logo) {
+.footer__logo {
+    font-size: 30px;
+    line-height: 30px;
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+.footer__link {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer__link:hover {
     text-decoration: underline;
 }
 
-.footer-bottom {
+.footer__link_color_accent {
+    color: #ffd180;
+}
+
+.copyright {
     font-size: 16px;
     line-height: 18px;
 
     background-color: #293449;
 }
 
-.footer-logo {
-    font-size: 30px;
-    line-height: 30px;
-
-    background-color: #ee3643;
+.copyright__link {
+    color: #ffd180;
 }
 
-.footer-navigation-secondary,
-.footer-bottom a {
-    color: #ffd180;
+.copyright__link:hover {
+    text-decoration: underline;
+}
 
+.social__icon {
+    color: #ffffff
 }
