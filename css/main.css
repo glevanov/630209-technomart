@@ -1,9 +1,6 @@
 /* Глобальные стили */
 
 body {
-    margin: 0;
-    padding: 0;
-
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -53,6 +50,8 @@ textarea {
     background-color: #ca2c37;
 }
 
+.search {}
+
 .search__input {
     color: #ffffff;
 }
@@ -62,6 +61,9 @@ textarea {
 }
 
 .search__input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ee3643;
+
     color: #000000;
 
     background-color: #ffffff;
@@ -156,6 +158,10 @@ textarea {
     border: none;
 }
 
+.button:hover {
+    background-color: #ca2c37
+}
+
 .blocks-list {
     color: #ffffff;
 }
@@ -164,6 +170,10 @@ textarea {
     text-transform: uppercase;
 
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.blocks-list__button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .blocks-list__item_theme_orange {
@@ -203,6 +213,7 @@ textarea {
     height: 266px;
 
     background-image: url("../img/slider-drill.jpg");
+    background-repeat: no-repeat;
 }
 
 .slider__list-item_perforator {
@@ -210,6 +221,7 @@ textarea {
     height: 266px;
 
     background-image: url("../img/slider-perfo.jpg");
+    background-repeat: no-repeat;
 }
 
 .spacer {
@@ -221,6 +233,8 @@ textarea {
     line-height: 30px;
     color: #32425c;
 }
+
+.product-cards {}
 
 .product-cards__item {
     border-width: 1px;
@@ -249,11 +263,125 @@ textarea {
     background-color: transparent;
 }
 
+.brand-cards {}
+
 .brand-cards__item {
     border-width: 1px;
     border-style: solid;
     border-color: #eaeaea;
 }
+
+.services {
+    background-color: #f4f8f9;
+}
+
+.services__text {
+    font-family: 'PT Sans', "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.services__heading {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.services__subheading {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.services__selector {}
+
+.services__selector-item {
+    color: #ffffff;
+
+    background-color: #32425c;
+}
+
+.services__selector-item:hover {
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.services__selector-item_selected {
+    color: #32425c;
+
+    background-color: #ffffff;
+}
+
+.services__delivery {
+    background-image: url("../img/services-car.png");
+    background-repeat: no-repeat;
+}
+
+.services__guarantee {
+    background-image: url("../img/services-guarantee.png");
+    background-repeat: no-repeat;
+}
+
+.services__credit {
+    background-image: url("../img/services-credit.png");
+    background-repeat: no-repeat;
+}
+
+.about_us {
+    background-color: #ffffff;
+}
+
+.about_us__list {}
+
+.about_us__list-item {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.directions {}
+
+.modal {}
+
+.modal__label {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.modal__input {
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #dee3e4;
+}
+
+.modal__input:focus {
+    outline: none;
+    border-color: #ee3643;
+}
+
+.modal__textarea {
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #dee3e4;
+}
+
+.modal__textarea:focus {
+    outline: none;
+    border-color: #ee3643;
+}
+
+.modal__close {}
 
 /* Стили футера*/
 .footer {
