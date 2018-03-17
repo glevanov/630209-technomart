@@ -11,7 +11,7 @@
             <div class="menu">
                 <a class="logo">ТЕХНОМАРТ</a>
                 <form class="search" action="https://echo.htmlacademy.ru" method="post">
-                    <label class="search__label" for="header-search">Поиск</label>
+                    <label class="search__label visually-hidden" for="header-search">Поиск</label>
                     <input class="search__input" type="search" name="header-search" id="header-search" placeholder="Поиск:">
                 </form>
                 <a class="link menu__regular-item" href="#">Закладки: 0</a>
@@ -50,36 +50,36 @@
                 <h2 class="visually-hidden">Категории</h2>
 
                 <ul class="blocks-list">
-                    <li class="blocks-list-item">
+                    <li class="blocks-list__item blocks-list__item_theme_orange">
                         <span>Материалы</span>
-                        <a href="#">на любой вкус</a>
+                        <a class="link blocks-list__button" href="#">на любой вкус</a>
                     </li>
-                    <li class="blocks-list-item">
+                    <li class="blocks-list__item blocks-list__item_theme_light-blue">
                         <span>Инструмент</span>
-                        <a href="#">НА ВСЕ СЛУЧАИ</a>
+                        <a class="link blocks-list__button" href="#">НА ВСЕ СЛУЧАИ</a>
                     </li>
-                    <li class="blocks-list-item">
+                    <li class="blocks-list__item blocks-list__item_theme_light-violet">
                         <span>Техника</span>
-                        <a href="#">для стройки</a>
+                        <a class="link blocks-list__button" href="#">для стройки</a>
                     </li>
-                    <li class="blocks-list-item">
+                    <li class="blocks-list__item blocks-list__item_theme_light-green">
                         <span>Скидки 50%</span>
-                        <a href="#">На 350 ТОВАРОВ</a>
+                        <a class="link blocks-list__button" href="#">На 350 ТОВАРОВ</a>
                     </li>
-                    <li class="blocks-list-item">
+                    <li class="blocks-list__item blocks-list__item_theme_orange">
                         <span>Доставка</span>
-                        <a href="#">бесплатно</a>
+                        <a class="link blocks-list__button" href="#">бесплатно</a>
                     </li>
                 </ul>
 
                 <div class="slider">
-                    <ul class="slider-list">
-                        <li class="slider-list-item">
-                            <span>Перфораторы</span>
+                    <ul class="slider__list">
+                        <li class="slider__list-item slider__list-item_perforator">
+                            <span class="slider__heading">Перфораторы</span>
                             <span>Настоящие мужские игрушки</span>
                         </li>
-                        <li class="slider-list-item">
-                            <span>Дрели</span>
+                        <li class="slider__list-item slider__list-item_drill">
+                            <span class="slider__heading">Дрели</span>
                             <span>Соседям на радость!</span>
                         </li>
                     </ul>
@@ -89,72 +89,76 @@
                 </div>
             </section>
 
-            <section class="popular-products">
-                <h2>Популярные товары:</h2>
-                <a href="#"><span>все популярные товары</span></a>
+            <section>
+                <div class="spacer">
+                    <h2 class="spacer__heading">Популярные товары:</h2>
+                    <a class="link button" href="#">все популярные товары</a>
+                </div>
 
-                <ul>
-                    <li class="product-card">
-                        <a href="#">
-                            <h3>Перфоратор BOSCH BFG 9000</h3>
+                <ul class="product-cards">
+                    <li class="product-cards__item">
+                        <a class="link" href="#">
+                            <h3 class="product-cards__title">Перфоратор BOSCH BFG 9000</h3>
                             <img src="img/perf-9000.jpg" width="218" height="148" alt="Перфоратор BOSCH BFG 9000">
-                            <span class="price-crossed">32500 Р.</span>
-                            <span class="price">25500 Р.</span>
+                            <span class="product-cards__price product-cards__price_crossed">32500 Р.</span>
+                            <span class="product-cards__price">25500 Р.</span>
                         </a>
                     </li>
-                    <li class="product-card">
-                        <a href="#">
-                            <h3>Перфоратор BOSCH BFG 3000</h3>
+                    <li class="product-cards__item">
+                        <a class="link" href="#">
+                            <h3 class="product-cards__title">Перфоратор BOSCH BFG 3000</h3>
                             <img src="img/perf-3000.jpg" width="218" height="148" alt="Перфоратор BOSCH BFG 3000">
-                            <span class="price-crossed">22500 Р.</span>
-                            <span>15500 Р.</span>
+                            <span class="product-cards__price product-cards__price_crossed">22500 Р.</span>
+                            <span class="product-cards__price">15500 Р.</span>
                         </a>
                     </li>
-                    <li class="product-card">
-                        <a href="#">
-                            <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <li class="product-cards__item">
+                        <a class="link" href="#">
+                            <h3 class="product-cards__title">Перфоратор BOSCH BFG 6000</h3>
                             <img src="img/perf-6000.jpg" width="218" height="148" alt="Перфоратор BOSCH BFG 6000">
-                            <span class="price-crossed">30500 Р.</span>
-                            <span>25500 Р.</span>
+                            <span class="product-cards__price product-cards__price_crossed">30500 Р.</span>
+                            <span class="product-cards__price">25500 Р.</span>
                         </a>
                     </li>
-                    <li class="product-card">
-                        <a href="#">
-                            <h3>Перфоратор BOSCH BFG 2000</h3>
+                    <li class="product-cards__item">
+                        <a class="link" href="#">
+                            <h3 class="product-cards__title">Перфоратор BOSCH BFG 2000</h3>
                             <img src="img/perf-2000.jpg" width="218" height="148" alt="Перфоратор BOSCH BFG 2000">
-                            <span class="price">12500 Р.</span>
+                            <span class="product-cards__price">12500 Р.</span>
                         </a>
                     </li>
                 </ul>
             </section>
 
-            <section class="popular-brands">
-                <h2>Популярные производители:</h2>
-                <a href="#"><span>все производители</span></a>
+            <section>
+                <div class="spacer">
+                    <h2 class="spacer__heading">Популярные производители:</h2>
+                    <a class="link button" href="#"><span>все производители</span></a>
+                </div>
 
-                <ul>
-                    <li>
+                <ul class="brand-cards">
+                    <li class="brand-cards__item">
                         <a href="#"><img src="img/brand-bosch.png" width="126" height="37" alt="BOSCH"></a>
                     </li>
-                    <li>
+                    <li class="brand-cards__item">
                         <a href="#"><img src="img/brand-makita.png" width="123" height="40" alt="Makita"></a>
                     </li>
-                    <li>
+                    <li class="brand-cards__item">
                         <a href="#"><img src="img/brand-dewalt.png" width="146" height="44" alt="DeWALT"></a>
                     </li>
-                    <li>
+                    <li class="brand-cards__item">
                         <a href="#"><img src="img/brand-interskol.png" width="184" height="32" alt="Интерскол"></a>
                     </li>
-                    <li>
+                    <li class="brand-cards__item">
                         <a href="#"><img src="img/brand-hitachi.png" width="169" height="31" alt="Hitachi"></a>
                     </li>
-                    <li>
+                    <li class="brand-cards__item">
                         <a href="#"><img src="img/brand-lg.png" width="121" height="73" alt="LG"></a>
                     </li>
-                    <li>
+                    <li class="brand-cards__item">
                         <a href="#"><img src="img/brand-aeg.png" width="151" height="96" alt="AEG Power Solutions"></a>
                     </li>
-                    <li>
+                    <li class="brand-cards__item">
                         <a href="#"><img src="img/brand-metabo.png" width="204" height="69" alt="metabo"></a>
                     </li>
                 </ul>
