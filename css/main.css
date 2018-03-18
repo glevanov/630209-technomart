@@ -92,6 +92,8 @@ textarea {
     line-height: 24px;
 }
 
+.user {}
+
 .user__list-item {
     font-size: 21px;
     line-height: 21px;
@@ -99,9 +101,26 @@ textarea {
     background-color: #ffffff;
 }
 
-.user__list-item:hover {
+.user__link:hover {
     color: #ee3643;
 }
+
+.user__link_profile:hover {
+    color: #000000;
+}
+
+.user__link_small {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+}
+
+.user__link_small:hover {
+    color: #ee3643;
+}
+
+.user__list-item:hover {}
+
 .navigation {
     color: #ffffff;
 
@@ -117,8 +136,21 @@ textarea {
     line-height: 17px;
 }
 
-.navigation__header-item:hover {
+.navigation__link_theme_header:hover {
     background-color: #293449;
+}
+
+.navigation__link_theme_footer {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.navigation__link_theme_footer:hover {
+    text-decoration: underline;
+}
+
+.navigation__link_theme_accent {
+    color: #ffd180;
 }
 
 .menu {
@@ -397,19 +429,6 @@ textarea {
     color: #ffffff;
 
     background-color: #ee3643;
-}
-
-.footer__link {
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.footer__link:hover {
-    text-decoration: underline;
-}
-
-.footer__link_color_accent {
-    color: #ffd180;
 }
 
 .copyright {
