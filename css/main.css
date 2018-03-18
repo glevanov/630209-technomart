@@ -26,7 +26,7 @@ textarea {
     border: none;
 }
 
-/* Стили хэдера*/
+/* Стили хэдера (кроме куска навигации)*/
 .header {
     background-color: #f4f7f9;
 }
@@ -160,7 +160,7 @@ textarea {
     /*display: flex;*/
 }
 
-.menu__regular-item:hover {
+.menu__item:hover {
     background-color: #212a3a;
 }
 
@@ -170,6 +170,14 @@ textarea {
 
 .menu__order:hover {
     background-color: #5fbb2d;
+}
+
+.menu__item_type_non-empty-cart {
+    background-color: #ee3643;
+}
+
+.menu__item_type_non-empty-cart:hover {
+    background-color: #ca2c37;
 }
 
 /* Стили основной секции*/
@@ -191,7 +199,63 @@ textarea {
 }
 
 .button:hover {
-    background-color: #ca2c37
+    background-color: #ca2c37;
+}
+
+.button_type_buy {
+    background-color: #63a63e;
+}
+
+.button_type_buy:hover {
+    background-color: #5fbb2d;
+}
+
+.button_type_bookmark {
+    color: #32425c;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #63a63e;
+
+    background-color: #ffffff;
+}
+
+.button_type_bookmark:hover {
+    border-color: #32425c;
+
+    background-color: #ffffff;
+}
+
+.button_theme_white {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.button_theme_white:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ee3643;
+
+    background-color: #ffffff;
+}
+
+.button_theme_light {
+    color: #000000;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+
+    background-color: #ffffff;
+}
+
+.button_theme_light:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ee3643;
+
+    background-color: #ffffff;
 }
 
 .blocks-list {
@@ -260,10 +324,31 @@ textarea {
     background-color: #faf6f2;
 }
 
+.spacer_theme_catalog {
+    background-color: #f2f6f8;
+}
+
 .spacer__heading {
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
+}
+
+.breadcrumbs {
+    font-family: 'PT Sans', "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.breadcrumbs__item {}
+
+.breadcrumbs__link {
+    color: #000000;
+}
+
+.breadcrumbs__link:hover {
+    color: #000000;
 }
 
 .product-cards {}
@@ -305,6 +390,10 @@ textarea {
 
 .services {
     background-color: #f4f8f9;
+}
+
+.services_theme_catalog {
+    background-color: #f2f6f8;
 }
 
 .services__text {
@@ -375,7 +464,70 @@ textarea {
 
 .directions {}
 
+.pagination {}
+
+.pagination__list-item {
+    color: #000000;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    border-radius: 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+}
+
+.pagination__list-item:hover {
+    border-color: #bdc6ca;
+}
+
+.pagination__list-item_current {
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+.filters {}
+
+.filters__heading {
+    font-family: 'PT Sans', "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    background-color: #f7f3ec;
+}
+
+.fieldset {}
+
+.fieldset__heading {
+    font-family: 'PT Sans', "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.fieldset__label {
+    font-family: 'PT Sans', "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
 .modal {}
+
+.modal__cart-lead {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.modal__cart-bottom {
+    background-color: #f1f1f1;
+}
 
 .modal__label {
     font-size: 18px;
