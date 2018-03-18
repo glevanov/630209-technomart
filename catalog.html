@@ -88,10 +88,10 @@
 
                         <div>
                             <label class="visually-hidden" for="price-min">Минимальная цена</label>
-                            <input type="number" name="price-min" id="price-min" value="0">
+                            <input class="fieldset__input_theme_yellow" type="number" name="price-min" id="price-min" value="0">
                             <span>—</span>
                             <label class="visually-hidden" for="price-max">Максимальная цена</label>
-                            <input type="number" name="price-max" id="price-max" value="30000">
+                            <input class="fieldset__input_theme_yellow" type="number" name="price-max" id="price-max" value="30000">
                         </div>
                     </fieldset>
 
@@ -154,16 +154,12 @@
             </aside>
 
             <section class="sort">
-                <div class="sort-container">
-                    <div class="sort-block">
-                        <h3 class="sort-heading">СОРТИРОВКА:</h3>
-                        <a class="sort-type" href="#">ПО ЦЕНЕ</a>
-                        <a class="sort-type" href="#">ПО ТИПУ</a>
-                        <a class="sort-type" href="#">ПО ФУНКЦИОНАЛУ</a>
-                        <a class="sort-ascending" href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
-                        <a class="sort-descending" href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
-                    </div>
-                </div>
+                <h3 class="sort__heading">СОРТИРОВКА:</h3>
+                <a class="link sort__parameter sort__parameter_selected" href="#">ПО ЦЕНЕ</a>
+                <a class="link sort__parameter" href="#">ПО ТИПУ</a>
+                <a class="link sort__parameter" href="#">ПО ФУНКЦИОНАЛУ</a>
+                <a class="link sort__ascending" href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+                <a class="link sort__descending" href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
             </section>
 
             <section class="catalog">

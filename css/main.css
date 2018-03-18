@@ -515,6 +515,49 @@ textarea {
     text-transform: uppercase;
 }
 
+.fieldset__input_theme_yellow {
+    font-size: 17px;
+    line-height: 18px;
+
+    background-color: #f7f3ec;
+}
+
+.sort {
+    background-color: #f7f3ec;
+}
+
+.sort__heading {
+    font-family: 'PT Sans', "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.sort__parameter {
+    font-family: 'PT Sans', "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.3);
+
+    border-bottom: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #ee3643;
+}
+
+.sort__parameter:hover {
+    color: #000000;
+
+    border-bottom-style: solid;
+    border-bottom-color: #ee3643;
+}
+
+.sort__parameter_selected {
+    color: #ee3643;
+
+    border: none;
+}
+
 .modal {}
 
 .modal__cart-lead {
