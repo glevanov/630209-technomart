@@ -68,6 +68,15 @@ textarea {
     margin-bottom: 86px;
 }
 
+.wrapper__footer {
+    margin-bottom: 50px;
+}
+
+.wrapper__copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Стили хэдера (кроме куска навигации для футера)*/
 .header {
     background-color: #f4f7f9;
@@ -778,6 +787,9 @@ textarea {
     line-height: 18px;
 
     background-color: #293449;
+
+    padding-top: 40px;
+    padding-bottom: 35px;
 }
 
 .copyring__text {
@@ -794,6 +806,9 @@ textarea {
 
 .social {
     display: flex;
+
+    margin: 0;
+    padding: 0;
 }
 
 .social__icon {
