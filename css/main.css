@@ -35,8 +35,6 @@ textarea {
     width: 940px;
     margin: 0 auto;
     padding: 0;
-
-    outline: 2px solid cyan;
 }
 
 .wrapper__menu {
@@ -55,8 +53,13 @@ textarea {
     display: flex;
     justify-content: space-between;
     margin-bottom: 43px;
+}
 
-    outline: 1px solid red;
+.wrapper__row {
+    display: flex;
+}
+
+.wrapper__col {
 }
 
 .wrapper__categories {
@@ -66,6 +69,7 @@ textarea {
 .wrapper__about {
     display: flex;
     margin-bottom: 86px;
+    padding-top: 80px;
 }
 
 .wrapper__footer {
@@ -75,6 +79,15 @@ textarea {
 .wrapper__copyright {
     display: flex;
     justify-content: space-between;
+}
+
+.wrapper__services {
+    width: 960px;
+    padding-left: 10px;
+}
+
+.wrapper__services-selector {
+    display: flex;
 }
 
 /* Стили хэдера (кроме куска навигации для футера)*/
@@ -295,7 +308,12 @@ textarea {
 }
 
 .spacer .button {
+    text-align: center;;
+
     width: 253px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+
 }
 
 .button:hover {
@@ -360,6 +378,10 @@ textarea {
 
 .blocks-list {
     color: #ffffff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .blocks-list__button {
@@ -370,6 +392,12 @@ textarea {
 
 .blocks-list__button:hover {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.blocks-list__item {
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 22px;
 }
 
 .blocks-list__item_theme_orange {
@@ -392,6 +420,8 @@ textarea {
     color: #ffffff;
     font-size: 18px;
     line-height: 24px;
+
+    width: 620px;
 }
 
 .slider__heading {
@@ -425,7 +455,12 @@ textarea {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    padding-right: 24px;
+    padding-left: 30px;
 }
 
 .spacer_theme_catalog {
@@ -436,6 +471,8 @@ textarea {
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
+
+    margin: 0;
 }
 
 .breadcrumbs {
@@ -510,6 +547,13 @@ textarea {
     width: 218px;
     height: 138px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.brand-cards__item a {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services {
@@ -542,7 +586,9 @@ textarea {
     text-transform: uppercase;
 }
 
-.services__selector {}
+.services__selector {
+
+}
 
 .services__selector-item {
     color: #ffffff;
@@ -684,12 +730,13 @@ textarea {
     border: none;
 }
 
-.modal {}
+.modal {
+    margin: 0 auto;
+    padding: 0;
+}
 
 .modal_type_write-us {
     width: 620px;
-
-    outline: 1px solid orange;
 }
 
 .modal__cart-lead {
