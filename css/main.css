@@ -29,7 +29,7 @@ textarea {
     border: none;
 }
 
-/* Дополнительные обёртки */
+/* Стили обёрток */
 
 .wrapper {
     width: 940px;
@@ -37,56 +37,59 @@ textarea {
     padding: 0;
 }
 
-.wrapper__menu {
+.wrapper_for_menu {
     display: flex;
     justify-content: space-between;
     margin-bottom: 46px;
 }
 
 /* Использовано так как меню не список, а создание класса menu__item для элементов меню приведет к вложению элементов в элементы, что недопустимо по БЭМ */
-.wrapper__menu > * {
+.wrapper_for_menu > * {
     padding-top: 11px;
     padding-bottom: 7px;
 }
 
-.wrapper__user-area {
+.wrapper_for_user-area {
     display: flex;
     justify-content: space-between;
     margin-bottom: 43px;
 }
 
-.wrapper__row {
-    display: flex;
-}
+.wrapper__row {}
 
-.wrapper__col {
-}
+.wrapper__col {}
 
-.wrapper__categories {
+.wrapper_for_categories {
     margin-bottom: 53px;
 }
 
-.wrapper__about {
+.wrapper_for_about {
     display: flex;
     margin-bottom: 86px;
     padding-top: 80px;
 }
 
-.wrapper__footer {
+.wrapper_for_catalog {
+    display: flex;
+}
+
+.wrapper_for_catalog-group {}
+
+.wrapper_for_footer {
     margin-bottom: 50px;
 }
 
-.wrapper__copyright {
+.wrapper_for_copyright {
     display: flex;
     justify-content: space-between;
 }
 
-.wrapper__services {
+.wrapper_for_services {
     width: 960px;
     padding-left: 10px;
 }
 
-.wrapper__services-selector {
+.wrapper_for_services-selector {
     display: flex;
 }
 
@@ -187,6 +190,10 @@ textarea {
     background-color: #ffffff;
 }
 
+.user__list-item_logged {
+    width: 300px;
+}
+
 .user__link:hover {
     color: #ee3643;
 }
@@ -203,6 +210,8 @@ textarea {
 
 .user__link_small:hover {
     color: #ee3643;
+
+    text-decoration: underline;
 }
 
 .user__list-item:hover {}
@@ -382,6 +391,8 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    padding-top: 60px;
 }
 
 .blocks-list__button {
@@ -465,6 +476,10 @@ textarea {
 
 .spacer_theme_catalog {
     background-color: #f2f6f8;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
 }
 
 .spacer__heading {
@@ -480,9 +495,17 @@ textarea {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 23px;
+    padding-bottom: 25px;
 }
 
-.breadcrumbs__item {}
+.breadcrumbs__item {
+    padding-right: 40px;
+}
 
 .breadcrumbs__link {
     color: #000000;
@@ -495,8 +518,13 @@ textarea {
 .product-cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+}
+
+.product-cards_type_brands {
+    margin-bottom: 65px;
 }
 
 .product-cards__item {
@@ -506,6 +534,17 @@ textarea {
 
     width: 218px;
     margin-bottom: 20px;
+}
+
+.product-cards__item_type_brands {
+    height: 138px;
+    display: flex;
+    align-items: center;
+}
+
+.product-cards__item_type_brands a {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-cards__title {
@@ -529,33 +568,6 @@ textarea {
     background-color: transparent;
 }
 
-.brand-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-
-    margin-bottom: 65px;
-}
-
-.brand-cards__item {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #eaeaea;
-
-    width: 218px;
-    height: 138px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.brand-cards__item a {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .services {
     background-color: #f4f8f9;
 
@@ -564,18 +576,27 @@ textarea {
 
 .services_theme_catalog {
     background-color: #f2f6f8;
+
+    padding-top: 62px;
+    padding-bottom: 73px;
 }
 
 .services__text {
     font-family: 'PT Sans', "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
+
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .services__heading {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .services__subheading {
@@ -636,17 +657,27 @@ textarea {
 
 .directions {}
 
-.pagination {}
+.pagination {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
 
 .pagination__list-item {
     color: #000000;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
 
     border-radius: 1px;
     border-style: solid;
     border-color: #e5e5e5;
+
+    width: 38px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .pagination__list-item:hover {
@@ -659,7 +690,13 @@ textarea {
     background-color: #ee3643;
 }
 
-.filters {}
+.pagination__list-item_next {
+    width: 134px;
+}
+
+.filters {
+    width: 220px;
+}
 
 .filters__heading {
     font-family: 'PT Sans', "Arial", sans-serif;
@@ -737,6 +774,14 @@ textarea {
 
 .modal_type_write-us {
     width: 620px;
+}
+
+.modal_type_cart {
+    width: 620px;
+}
+
+.modal_type_map {
+    width: 940px;
 }
 
 .modal__cart-lead {
