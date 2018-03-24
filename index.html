@@ -12,13 +12,13 @@
         <header class="header">
             <div class="menu">
                 <div class="wrapper wrapper_for_menu">
-                    <a class="logo">ТЕХНОМАРТ</a>
+                    <a class="logo link" href="#">ТЕХНОМАРТ</a>
                     <form class="search" action="https://echo.htmlacademy.ru" method="post">
                         <label class="search__label visually-hidden" for="header-search">Поиск</label>
                         <input class="search__input" type="search" name="header-search" id="header-search" placeholder="Поиск:">
                     </form>
-                    <a class="link menu__item" href="#">Закладки: 0</a>
-                    <a class="link menu__item" href="#">Корзина: 0</a>
+                    <a class="link menu__item menu__item_type_bookmarks" href="#">Закладки: 0</a>
+                    <a class="link menu__item menu__item_type_basket" href="#">Корзина: 0</a>
                     <a class="link menu__order" href="#">Оформить заказ</a>
                 </div>
             </div>
@@ -31,21 +31,26 @@
                     <span class="contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 </div>
 
-                <ul class="user">
-                    <li class="user__list-item"><a class="link user__link" href="#">Войти</a></li>
-                    <li class="user__list-item"><a class="link user__link" href="#">Регистрация</a></li>
-                </ul>
+                <div class="user">
+                    <div class="user__list-item">
+                        <a class="link user__link user__link_login" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                            Войти
+                        </a>
+                    </div>
+                    <div class="user__list-item user__list-item_type_register"><a class="link user__link" href="#">Регистрация</a></div>
+                </div>
             </div>
 
             <nav class="navigation wrapper">
                 <ul class="navigation__list">
-                    <li class="navigation__list-item"><a class="link navigation__link_theme_header" href="#">Главная</a></li>
+                    <li class="navigation__list-item"><a class="link navigation__link_theme_header navigation__link_first" href="#">Главная</a></li>
                     <li class="navigation__list-item"><a class="link navigation__link_theme_header" href="#">Компания</a></li>
                     <li class="navigation__list-item"><a class="link navigation__link_theme_header" href="catalog.html">Каталог</a></li>
                     <li class="navigation__list-item"><a class="link navigation__link_theme_header" href="#">Новости</a></li>
                     <li class="navigation__list-item"><a class="link navigation__link_theme_header" href="#">Спецпредложения</a></li>
                     <li class="navigation__list-item"><a class="link navigation__link_theme_header" href="#">Доставка</a></li>
-                    <li class="navigation__list-item"><a class="link navigation__link_theme_header" href="#">Контакты</a></li>
+                    <li class="navigation__list-item"><a class="link navigation__link_theme_header navigation__link_last" href="#">Контакты</a></li>
                 </ul>
             </nav>
         </header>
@@ -57,16 +62,16 @@
                     <h2 class="visually-hidden">Категории</h2>
                     <div class="blocks-list">
                         <div class="wrapper__row">
-                            <div class="blocks-list__item blocks-list__item_theme_orange">
-                                <span>Материалы</span>
+                            <div class="blocks-list__item blocks-list__item_type_materials">
+                                <span class="blocks-list__heading">Материалы</span>
                                 <a class="link blocks-list__button" href="#">на любой вкус</a>
                             </div>
-                            <div class="blocks-list__item blocks-list__item_theme_light-blue">
-                                <span>Инструмент</span>
+                            <div class="blocks-list__item blocks-list__item_type_instruments">
+                                <span class="blocks-list__heading">Инструмент</span>
                                 <a class="link blocks-list__button" href="#">НА ВСЕ СЛУЧАИ</a>
                             </div>
-                            <div class="blocks-list__item blocks-list__item_theme_light-violet">
-                                <span>Техника</span>
+                            <div class="blocks-list__item blocks-list__item_type_equipment">
+                                <span class="blocks-list__heading">Техника</span>
                                 <a class="link blocks-list__button" href="#">для стройки</a>
                             </div>
                         </div>
@@ -86,15 +91,19 @@
                                 <button class="slider__button slider__button_left" type="button">Кнопка влево</button>
                                 <button class="slider__button slider__button_right" type="button">Кнопка вправо</button>
                                 <a class="button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                                <div class="slider__controls">
+                                    <i class="slider__control"></i>
+                                    <i class="slider__control slider__control_active"></i>
+                                </div>
                             </div>
 
                             <div class="wrapper__col">
-                                <div class="blocks-list__item blocks-list__item_theme_light-green">
-                                    <span>Скидки 50%</span>
+                                <div class="blocks-list__item blocks-list__item_type_discount">
+                                    <span class="blocks-list__heading">Скидки 50%</span>
                                     <a class="link blocks-list__button" href="#">На 350 ТОВАРОВ</a>
                                 </div>
-                                <div class="blocks-list__item blocks-list__item_theme_orange">
-                                    <span>Доставка</span>
+                                <div class="blocks-list__item blocks-list__item_type_delivery">
+                                    <span class="blocks-list__heading">Доставка</span>
                                     <a class="link blocks-list__button" href="#">бесплатно</a>
                                 </div>
                             </div>
@@ -284,9 +293,21 @@
                     <p class="copyring__text">© 2010–2017 Компания «Техномарт» Все права защищены</p>
 
                     <ul class="social">
-                        <li class="social__list"><a class="social__icon" href="#">Вконтакте</a></li>
-                        <li class="social__list"><a class="social__icon" href="#">Фейсбук</a></li>
-                        <li class="social__list"><a class="social__icon" href="#">Инстаграм</a></li>
+                        <li class="social__list">
+                            <a class="social__icon" href="#">
+                                <img src="img/icon-vk.svg" width="26" height="16" alt="Вконтакте">
+                            </a>
+                        </li>
+                        <li class="social__list">
+                            <a class="social__icon" href="#">
+                                <img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">
+                            </a>
+                        </li>
+                        <li class="social__list">
+                            <a class="social__icon" href="#">
+                                <img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм">
+                            </a>
+                        </li>
                     </ul>
 
                     <p class="copyring__text">Обратная связь: <a class="link copyright__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
