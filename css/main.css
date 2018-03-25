@@ -100,11 +100,6 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
 }
 
-.wrapper_for_services {
-    width: 960px;
-    padding-left: 10px;
-}
-
 .wrapper_for_services-selector {
     display: flex;
 }
@@ -1141,7 +1136,11 @@ input[type="radio"].visually-hidden {
 
     width: 400px;
     margin: 0;
-    margin-bottom: 10px;
+}
+
+.services__text_slider {
+    padding-left: 80px;
+    width: 283px;
 }
 
 .services__heading {
@@ -1151,7 +1150,7 @@ input[type="radio"].visually-hidden {
 
     width: 400px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .services__subheading {
@@ -1160,16 +1159,53 @@ input[type="radio"].visually-hidden {
     line-height: 36px;
     color: #32425c;
     text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 66px;
+    padding-left: 80px;
+    padding-bottom: 25px;
 }
 
 .services__selector {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
 
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    padding-top: 69px;
+    padding-bottom: 102px;
+    position: relative;
+}
+
+.services__selector::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    right: 0;
+
+    width: 10px;
+    height: 272px;
+
+    background-image: url("../img/services-shadow.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .services__selector-item {
     color: #ffffff;
 
     background-color: #32425c;
+    padding-left: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.services__selector-item:not(:first-child) {
+    border-top: 1px solid #4d637b;
 }
 
 .services__selector-item:hover,
@@ -1188,16 +1224,25 @@ input[type="radio"].visually-hidden {
 .services__delivery {
     background-image: url("../img/services-car.png");
     background-repeat: no-repeat;
+    background-position: bottom right;
+
+    width: 700px;
 }
 
 .services__guarantee {
     background-image: url("../img/services-guarantee.png");
     background-repeat: no-repeat;
+    background-position: bottom right;
+
+    width: 700px;
 }
 
 .services__credit {
     background-image: url("../img/services-credit.png");
     background-repeat: no-repeat;
+    background-position: bottom right;
+
+    width: 700px;
 }
 
 .about_us {
