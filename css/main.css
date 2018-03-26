@@ -97,12 +97,16 @@ input[type="radio"].visually-hidden {
 
 .wrapper_for_copyright {
     display: flex;
-    justify-content: space-between;
 }
 
 .wrapper_for_services-selector {
     display: flex;
     position: relative;
+}
+
+.wrapper_for_footer-navigation-group {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Стили хэдера (кроме куска навигации для футера)*/
@@ -1551,23 +1555,56 @@ input[type="radio"].visually-hidden {
     font-size: 30px;
     line-height: 30px;
     color: #ffffff;
+    text-align: center;
 
     background-color: #ee3643;
+
+    display: block;
+    width: 220px;
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
+    position: relative;
+}
+
+.footer__logo::after {
+    content: "";
+
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+
+    width: 100%;
+    height: 5px;
+    background-color: #b52933;
 }
 
 .footer__address {
     margin: 0;
+    padding-top: 32px;
+    padding-left: 3px;
+}
 }
 
-.secondary-navigation {}
+.secondary-navigation {
+    margin-left: auto;
+}
 
 .secondary-navigation__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    padding-top: 35px;
 }
 
+.secondary-navigation__list-item {
+    padding-left: 59px;
+}
+
+.secondary-navigation__list-item:first-child {
+    padding-left: 0;
+}
 
 .copyright {
     font-size: 16px;
@@ -1575,12 +1612,26 @@ input[type="radio"].visually-hidden {
 
     background-color: #293449;
 
-    padding-top: 40px;
+    padding-top: 38px;
     padding-bottom: 35px;
 }
 
 .copyring__text {
     margin: 0;
+}
+
+.copyring__text:first-child {
+    width: 240px;
+}
+
+.copyring__text:nth-child(3) {
+    width: 140px;
+    margin-left: 116px;
+}
+
+.copyring__text:last-child {
+    width: 110px;
+    margin-left: auto;
 }
 
 .copyright__link {
@@ -1594,9 +1645,11 @@ input[type="radio"].visually-hidden {
 
 .social {
     display: flex;
+    flex-wrap: wrap;
 
     margin: 0;
     padding: 0;
+    margin-left: 153px;
 }
 
 .social__list {
