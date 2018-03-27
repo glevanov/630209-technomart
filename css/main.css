@@ -377,20 +377,19 @@ input[type="radio"].visually-hidden {
     flex-grow: 1;
 }
 
-.navigation__link_first {
-    padding-left: 22px;
-}
-
-.navigation__link_last {
-    padding-right: 22px;
-}
-
 .navigation__link_theme_header {
     padding-top: 20px;
     padding-bottom: 23px;
     width: 100%;
     text-align: center;
+}
 
+.navigation__list-item:first-child .navigation__link_theme_header {
+    padding-left: 22px;
+}
+
+.navigation__list-item:last-child .navigation__link_theme_header {
+    padding-right: 22px;
 }
 
 .navigation__link_theme_header:hover,
@@ -684,6 +683,21 @@ input[type="radio"].visually-hidden {
 
     padding-bottom: 22px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.blocks-list__item_new-flag::after {
+    content: "";
+
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/new-flag.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .blocks-list__heading {
