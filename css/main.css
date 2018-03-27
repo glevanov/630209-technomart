@@ -428,7 +428,8 @@ input[type="radio"].visually-hidden {
     padding-top: 12px;
 }
 
-.menu__item:hover {
+/*тут есть проблемка*/
+.menu__item:hover(not:menu__item_type_non-empty-cart) {
     background-color: #212a3a;
 }
 
@@ -461,7 +462,8 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
-.menu__item_type_basket::before {
+.menu__item_type_basket::before,
+.menu__item_type_non-empty-cart::before {
     content: "";
 
     position: absolute;
@@ -481,7 +483,9 @@ input[type="radio"].visually-hidden {
 .menu__item_type_basket:hover::before,
 .menu__item_type_basket:focus::before,
 .menu__item_type_bookmarks:hover::before,
-.menu__item_type_bookmarks:focus::before {
+.menu__item_type_bookmarks:focus::before,
+.menu__item_type_non-empty-cart:hover::before,
+.menu__item_type_non-empty-cart:focus::before {
     opacity: 1;
 }
 
@@ -502,11 +506,17 @@ input[type="radio"].visually-hidden {
 }
 
 .menu__item_type_non-empty-cart {
+    /*text-align: center;*/
+
     background-color: #ee3643;
+
+    width: 106px;
+    padding-left: 44px;
+    position: relative;
 }
 
 .menu__item_type_non-empty-cart:hover,
-.menu__item_type_non-empty-cart:focus {
+.menu__item_type_non-empty-cart:focus, {
     background-color: #ca2c37;
 }
 
@@ -1469,6 +1479,74 @@ input[type="radio"].visually-hidden {
 
 .modal_type_write-us {
     width: 620px;
+
+    left: 50%;
+    bottom: 37vh;
+    margin-left: -470px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+}
+
+.modal_type_write-us::before {
+    content: "";
+
+    position: absolute;
+    width: 620px;
+    height: 7px;
+    top: 0px;
+    left: 0px;
+
+    background-color: #ff5257;
+}
+
+.modal_type_write-us::after {
+    content: "";
+
+    position: absolute;
+    width: 620px;
+    height: 114px;
+    bottom: 0px;
+    left: 0px;
+
+    background-color: #f4f4f4;
+}
+
+.write-us-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 460px;
+    margin-left: 80px;
+    margin-top: 53px;
+    z-index: 1;
+}
+
+.write-us-form input {
+    width: 188px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.write-us-form textarea {
+    width: 428px;
+    height: 94px;
+    margin-bottom: 37px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    resize: none;
+}
+
+.modal_type_write-us .button {
+    width: 100%;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    position: relative;
+    z-index: 1;
 }
 
 .modal_type_cart {
@@ -1484,6 +1562,7 @@ input[type="radio"].visually-hidden {
     bottom: 37vh;
     margin-left: -470px;
 
+    background-color: #ffffff;
     box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
@@ -1503,6 +1582,9 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     line-height: 18px;
     color: #000000;
+
+    display: block;
+    margin-bottom: 10px;
 }
 
 .modal__input {
@@ -1511,11 +1593,14 @@ input[type="radio"].visually-hidden {
     color: #a9a9a9;
 
     border-radius: 2px;
+    border-width: 2px;
     border-style: solid;
     border-color: #dee3e4;
 
     background-color: transparent;
-    border: none;
+
+    display: block;
+    margin-bottom: 20px;
 }
 
 .modal__input:hover {
@@ -1534,11 +1619,11 @@ input[type="radio"].visually-hidden {
     color: #a9a9a9;
 
     border-radius: 2px;
+    border-width: 2px;
     border-style: solid;
     border-color: #dee3e4;
 
     background-color: transparent;
-    border: none;
 }
 
 .modal__textarea:hover {
@@ -1568,6 +1653,11 @@ input[type="radio"].visually-hidden {
 
 .modal_type_map .modal__close {
     top: 9px;
+    right: 9px;
+}
+
+.modal_type_write-us .modal__close {
+    top: 16px;
     right: 9px;
 }
 
