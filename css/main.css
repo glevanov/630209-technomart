@@ -428,7 +428,7 @@ input[type="radio"].visually-hidden {
 }
 
 /*тут есть проблемка*/
-.menu__item:hover(not:menu__item_type_non-empty-cart) {
+.menu__item:hover {
     background-color: #212a3a;
 }
 
@@ -486,6 +486,10 @@ input[type="radio"].visually-hidden {
 .menu__item_type_non-empty-cart:hover::before,
 .menu__item_type_non-empty-cart:focus::before {
     opacity: 1;
+}
+
+.menu__item_type_non-empty-cart:hover {
+    background-color: #ca2c37;
 }
 
 .menu__order {
