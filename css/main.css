@@ -54,7 +54,6 @@ input[type="radio"].visually-hidden {
 
 .wrapper_for_user-area {
     display: flex;
-    justify-content: space-between;
     padding-bottom: 39px;
     padding-top: 46px;
 }
@@ -87,9 +86,13 @@ input[type="radio"].visually-hidden {
 
 .wrapper_for_catalog {
     display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
 }
 
-.wrapper_for_catalog-group {}
+.wrapper_for_catalog-column {
+    width: 700px;
+}
 
 .wrapper_for_footer {
     padding-bottom: 50px;
@@ -239,6 +242,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     width: 270px;
+    margin-left: 68px;
 }
 
 .contacts__phone {
@@ -284,11 +288,12 @@ input[type="radio"].visually-hidden {
 .user {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
     margin: 0;
     padding: 0;
-    width: 280px;
+    margin-left: auto;
+    width: 300px;
 }
 
 .user__list-item {
@@ -304,13 +309,39 @@ input[type="radio"].visually-hidden {
 .user__list-item_type_register {
     width: 150px;
     text-align: center;
+    margin-left: 10px;
 }
 
 .user__list-item_logged {
     width: 300px;
+    display: flex;
 }
 
-.user__link {}
+.user__list-item_small {
+    background-color: transparent;
+    padding: 0;
+    align-self: left;
+}
+
+.user__list-item_small:last-of-type {
+    margin-right: 72px;
+    margin-left: 32px;
+    position: relative;
+}
+
+.user__list-item_small:last-of-type::before {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: -17px;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 4px;
+    background-color: #32425c;
+}
 
 .user__link_login {
     display: flex;
@@ -338,22 +369,36 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
+
 .user__link_profile:hover,
 .user__link_profile:focus {
     color: #000000;
+}
+
+.user__profile {
+    display: flex;
+}
+
+.user__profile img {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.user__logout {
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .user__link_small {
     font-size: 16px;
     line-height: 18px;
     color: #32425c;
+    text-decoration: underline;
 }
 
 .user__link_small:hover,
 .user__link_small:focus {
     color: #ee3643;
-
-    text-decoration: underline;
 }
 
 .user__list-item:hover {}
@@ -527,12 +572,10 @@ input[type="radio"].visually-hidden {
 }
 
 .menu__item_type_non-empty-cart {
-    /*text-align: center;*/
-
     background-color: #ee3643;
 
-    width: 106px;
-    padding-left: 44px;
+    width: 101px;
+    padding-left: 49px;
     position: relative;
 }
 
@@ -752,6 +795,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/new-flag.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+    z-index: 11;
 }
 
 .blocks-list__heading {
@@ -1073,7 +1117,7 @@ input[type="radio"].visually-hidden {
 .spacer_theme_catalog {
     background-color: #f2f6f8;
 
-    padding-top: 30px;
+    padding-top: 29px;
     padding-bottom: 30px;
     padding-left: 30px;
 }
@@ -1095,23 +1139,51 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding-left: 0;
-    padding-top: 23px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 22px;
 }
 
 .breadcrumbs__item {
-    padding-right: 40px;
+    padding-right: 33px;
+}
+
+.breadcrumbs__item::before {
+    content: "";
+
+    position: relative;
+    top: 2px;
+    left: -18px;
+
+    display: inline-flex;
+    width: 8px;
+    height: 12px;
+
+    background-image: url("../img/icon-right-small.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.breadcrumbs__item:first-child::before {
+    display: none;
 }
 
 .breadcrumbs__link {
     color: #000000;
+    position: relative;
 }
 
 .breadcrumbs__link:hover,
 .breadcrumbs__link:focus {
     color: #000000;
+    text-decoration: underline;
+}
+
+.breadcrumbs__item:last-child .breadcrumbs__link:hover,
+.breadcrumbs__item:last-child .breadcrumbs__link:focus {
+    text-decoration: none;
 }
 
 .product-cards {
@@ -1148,6 +1220,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/new-flag.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+    z-index: 11;
 }
 
 .product-cards__item_type_brands {
@@ -1475,6 +1548,12 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 
     background-color: #f7f3ec;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .fieldset {}
@@ -1510,6 +1589,12 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sort__parameter {
