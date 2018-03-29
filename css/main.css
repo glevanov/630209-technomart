@@ -1582,6 +1582,9 @@ input[type="radio"].visually-hidden {
 
 .sort {
     background-color: #f7f3ec;
+
+    display: flex;
+    align-items: center;
 }
 
 .sort__heading {
