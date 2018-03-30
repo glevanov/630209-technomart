@@ -1316,6 +1316,10 @@ input[type="radio"].visually-hidden {
     font-family: 'PT Sans', "Arial", sans-serif;
 }
 
+.product-cards_type_catalog {
+    justify-content: flex-start;
+}
+
 .product-cards_type_brands {
     margin-bottom: 65px;
 }
@@ -1328,6 +1332,13 @@ input[type="radio"].visually-hidden {
     width: 218px;
     margin-bottom: 20px;
     position: relative;
+}
+.product-cards__item_catalog {
+    margin-right: 20px;
+}
+
+.product-cards__item_catalog:nth-of-type(3n) {
+    margin-right: 0;
 }
 
 .product-cards__item:hover {
