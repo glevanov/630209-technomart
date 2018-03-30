@@ -104,52 +104,38 @@
                                 <legend class="fieldset__heading">Производители:</legend>
                                 <ul>
                                     <li>
-                                        <label class="fieldset__label">
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="bosch" checked>
-                                            BOSCH
-                                        </label>
+                                        <input class="visually-hidden filters__checkbox" type="checkbox" name="brands" value="bosch" id="bosch" checked>
+                                        <label class="fieldset__label filters__checkbox-label" for="bosch">BOSCH</label>
                                     </li>
                                     <li>
-                                        <label class="fieldset__label">
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="interskol">
-                                            ИНТЕРСКОЛ
-                                        </label>
+                                        <input class="visually-hidden filters__checkbox" type="checkbox" name="brands" value="interskol" id="interskol">
+                                        <label class="fieldset__label filters__checkbox-label" for="interskol">ИНТЕРСКОЛ</label>
                                     </li>
                                     <li>
-                                        <label class="fieldset__label">
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="makita" checked>
-                                            MAKIta
-                                        </label>
+                                        <input class="visually-hidden filters__checkbox" type="checkbox" name="brands" value="makita" id="makita" checked>
+                                        <label class="fieldset__label filters__checkbox-label" for="makita">MAKIta</label>
                                     </li>
                                     <li>
-                                        <label class="fieldset__label">
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="dewalt">
-                                            Dewalt
-                                        </label>
+                                        <input class="visually-hidden filters__checkbox" type="checkbox" name="brands" value="dewalt" id="dewalt">
+                                        <label class="fieldset__label filters__checkbox-label" for="dewalt">Dewalt</label>
                                     </li>
                                     <li>
-                                        <label class="fieldset__label">
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brands" value="hitachi">
-                                            Hitachi
-                                        </label>
+                                        <input class="visually-hidden filters__checkbox" type="checkbox" name="brands" value="hitachi" id="hitachi">
+                                        <label class="fieldset__label filters__checkbox-label" for="hitachi">Hitachi</label>
                                     </li>
                                 </ul>
                             </fieldset>
 
-                            <fieldset>
+                            <fieldset class="fieldset_power">
                                 <legend class="fieldset__heading">ПИТАНИЕ:</legend>
                                 <ul>
                                     <li>
-                                        <label class="fieldset__label">
-                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="accumulator" checked>
-                                            Аккумуляторные
-                                        </label>
+                                        <input class="visually-hidden filters__radio" type="radio" name="power" value="accumulator" id="accumulator" checked>
+                                        <label class="fieldset__label filters__radio-label" for="accumulator">Аккумуляторные</label>
                                     </li>
                                     <li>
-                                        <label class="fieldset__label">
-                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="cable">
-                                            Сетевые
-                                        </label>
+                                        <input class="visually-hidden filters__radio" type="radio" name="power" value="cable" id="cable">
+                                        <label class="fieldset__label filters__radio-label" for="cable">Сетевые</label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -302,13 +288,11 @@
                 </div>
             </section>
 
-            <div class="modal modal_type_cart">
-                <div class="modal__cart-lead">Товар добавлен в корзину!</div>
-                <div class="modal__cart-bottom">
-                    <a class="button link" href="#">ОФОРМИТЬ ЗАКАЗ</a>
-                    <a class="button button_theme_white link" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-                </div>
-                <button class="button modal__close" type="button">Закрыть окно</button>
+            <div class="modal modal_type_cart visually-hidden">
+                <span class="modal__cart-lead">Товар добавлен в корзину!</span>
+                <a class="button link" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+                <a class="button button_theme_white link" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+                <button class="modal__close" type="button">Закрыть окно</button>
             </div>
         </main>
         <footer class="footer">
