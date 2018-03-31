@@ -218,6 +218,14 @@ input[type="radio"].visually-hidden {
     background-color: #9a212a;
 }
 
+.logo:active {
+    background-color: #ba2732;
+}
+
+.logo:active::after {
+    background-color: #8e1e26;
+}
+
 .search {
     width: auto;
     -webkit-box-flex: 1;
@@ -420,6 +428,14 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
+.user__link:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user__link:active path {
+    fill: #c5c5c5;
+    opacity: 1;
+}
 
 .user__link_profile:hover,
 .user__link_profile:focus {
@@ -434,6 +450,14 @@ input[type="radio"].visually-hidden {
 
 .user__list-item_logged:hover path {
     fill: #32425c;
+}
+
+.user__list-item_logged:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user__list-item_logged:active path {
+    fill: #c5c5c5;
 }
 
 .user__profile svg {
@@ -456,6 +480,10 @@ input[type="radio"].visually-hidden {
 .user__link_small:hover,
 .user__link_small:focus {
     color: #ee3643;
+}
+
+.user__link_small:active {
+    color: rgba(50, 66, 92, 0.3);
 }
 
 .user__list-item:hover {}
@@ -527,18 +555,33 @@ input[type="radio"].visually-hidden {
     background-color: #293449;
 }
 
+.navigation__link_theme_header:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #1d2739;
+}
+
 .navigation__link_theme_footer {
     font-size: 18px;
     line-height: 24px;
 }
 
 .navigation__link_theme_footer:hover,
-.navigation__link_theme_footer:hover {
+.navigation__link_theme_footer:focus {
     text-decoration: underline;
+}
+
+.navigation__link_theme_footer:active {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .navigation__link_theme_accent {
     color: #ffd180;
+}
+
+.navigation__link_theme_accent:active {
+    text-decoration: none;
+    color: rgba(255, 209, 128, 0.5);
 }
 
 .menu {
@@ -557,9 +600,13 @@ input[type="radio"].visually-hidden {
     padding-top: 12px;
 }
 
-/*тут есть проблемка*/
 .menu__item:hover {
     background-color: #212a3a;
+}
+
+.menu__item:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .menu__item_type_bookmarks {
@@ -618,8 +665,18 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
+.menu__item_type_basket:active::before,
+.menu__item_type_bookmarks:active::before,
+.menu__item_type_non-empty-cart:active::before {
+    opacity: 0.6;
+}
+
 .menu__item_type_non-empty-cart:hover {
     background-color: #ca2c37;
+}
+
+.menu__item_type_non-empty-cart:active {
+    background-color: #ba2732;
 }
 
 .menu__order {
@@ -636,6 +693,11 @@ input[type="radio"].visually-hidden {
 .menu__order:hover,
 .menu__order:focus {
     background-color: #5fbb2d;
+}
+
+.menu__order:active {
+    background-color: #518534;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .menu__item_type_non-empty-cart {
@@ -746,8 +808,23 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
+.button_type_buy:active {
+    background-color: #518534;
+    border-color: #518534;
+}
+
+.button_type_buy:active::before {
+    opacity: 1;
+}
+
 .button_type_bookmark:hover {
     border-color: #32425c;
+}
+
+.button_type_bookmark:active {
+    border-color: #c1c6ce;
+    color: rgba(50, 66, 92, 0.3);
+    outline: none;
 }
 
 .button_type_price {
@@ -861,6 +938,10 @@ input[type="radio"].visually-hidden {
 .blocks-list__button:hover,
 .blocks-list__button:focus {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.blocks-list__button:active {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .blocks-list__item {
@@ -1137,6 +1218,10 @@ input[type="radio"].visually-hidden {
     z-index: 2;
 }
 
+.slider .button:active {
+    background-color: #ba2732;
+}
+
 .slider__controls {
     position: absolute;
     left: 313px;
@@ -1374,6 +1459,23 @@ input[type="radio"].visually-hidden {
 .product-cards__item_type_brands a {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-cards__item_type_brands:hover {
+    border-color: white;
+}
+
+.product-cards__item_type_brands:active {
+    box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+    border-color: white;
+}
+.product-cards__item_type_brands:active img {
+    opacity: 0.3;
 }
 
 .product-cards__title {
@@ -1684,6 +1786,11 @@ input[type="radio"].visually-hidden {
 
     width: 38px;
     margin-right: 8px;
+}
+
+.pagination__list-item .link {
+    display: block;
+
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1693,10 +1800,19 @@ input[type="radio"].visually-hidden {
     border-color: #bdc6ca;
 }
 
+.pagination__list-item:active {
+    border-color: #ee3643;
+}
+
 .pagination__list-item_current {
     color: #ffffff;
-
     background-color: #ee3643;
+    border-color: #ee3643;
+}
+
+.pagination__list-item_current:hover,
+.pagination__list-item_current:focus {
+    border-color: #ee3643;
 }
 
 .pagination__list-item_next {
@@ -1936,6 +2052,7 @@ input[type="radio"].visually-hidden {
     font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .fieldset__input_theme_yellow {
@@ -2043,6 +2160,11 @@ input[type="radio"].visually-hidden {
     fill: #ee3643;
 }
 
+.sort__ascending:hover path,
+.sort__descending:hover path {
+    fill: #000000;
+}
+
 .modal {
     margin: 0;
     padding: 0;
@@ -2054,7 +2176,7 @@ input[type="radio"].visually-hidden {
     width: 620px;
 
     left: 50%;
-    top: 330px;
+    top: 34vh;
     margin-left: -310px;
 
     background-color: #ffffff;
@@ -2139,7 +2261,7 @@ input[type="radio"].visually-hidden {
     height: 446px;
 
     left: 50%;
-    bottom: 363px;
+    top: 16.5vh;
     margin-left: -470px;
 
     background-color: #ffffff;
@@ -2150,7 +2272,7 @@ input[type="radio"].visually-hidden {
 .modal_type_cart {
     width: 620px;
     left: 50%;
-    top: 411px;
+    top: 42.5vh;
     margin-left: -310px;
 
     background-color: #ffffff;
@@ -2445,6 +2567,11 @@ input[type="radio"].visually-hidden {
     text-decoration: underline;
 }
 
+.copyright__link:active {
+    text-decoration: none;
+    color: #ee3643;
+}
+
 .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2479,6 +2606,11 @@ input[type="radio"].visually-hidden {
 .social__icon {
     color: #ffffff;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    width: 40px;
+    height: 40px;
 }
