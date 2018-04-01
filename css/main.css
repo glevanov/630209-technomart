@@ -709,7 +709,7 @@ input[type="radio"].visually-hidden {
 }
 
 .menu__item_type_non-empty-cart:hover,
-.menu__item_type_non-empty-cart:focus, {
+.menu__item_type_non-empty-cart:focus {
     background-color: #ca2c37;
 }
 
